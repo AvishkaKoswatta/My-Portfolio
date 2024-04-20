@@ -1,0 +1,572 @@
+/* Home.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Set background color to black */
+}
+
+
+.text1 {
+    color: white; /* Set text color to white */
+    margin-top: 150px; /* Adjust margin top to accommodate fixed header */
+    text-align: left;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    margin-left: 50px;
+}
+
+.second{
+    margin-left: 500px;
+    margin-top: 240px;
+    font-size: 40px;
+    
+}
+.skills{
+    font-size: 25px;
+    padding: 10px 20px;
+    margin-left: -400px;
+}
+
+.java{
+    margin-left: -400px;
+    margin-top: 10px;
+}
+.react{
+    margin-left: -150px;
+    margin-top:-55px;
+}
+.flutter{
+    margin-left: 420px;
+    margin-top:-55px;
+}
+.jmeter{
+    margin-left: 150px;
+    margin-top:-55px;
+}
+
+/* Home.css */
+/*
+.line {
+    position: absolute; 
+    top: 1150px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 2px;
+    height: 900px; 
+    background-color: #f2f6f7; 
+}
+*/
+
+.box1 {
+    position: absolute; /* Position the line absolutely */
+    top: 1180px; /* Align the line to the top of the container */
+    left: 240px; /* Align the line horizontally in the middle */
+    transform: translateX(-50%); /* Center the line horizontally */
+    width: 400px; /* Adjust thickness of the line */
+    height: 200px; /* Adjust height of the line */
+    background-color: #053541; /* Adjust color of the line */
+}
+
+.box2 {
+    position: absolute; /* Position the line absolutely */
+    top: 1280px; /* Align the line to the top of the container */
+    left: 770px; /* Align the line horizontally in the middle */
+    transform: translateX(-50%); /* Center the line horizontally */
+    width: 400px; /* Adjust thickness of the line */
+    height: 200px; /* Adjust height of the line */
+    background-color: #f5f1f1; /* Adjust color of the line */
+}
+
+.box3 {
+    position: absolute; /* Position the line absolutely */
+    top: 1500px; /* Align the line to the top of the container */
+    left: 200px; /* Align the line horizontally in the middle */
+    transform: translateX(-50%); /* Center the line horizontally */
+    width: 400px; /* Adjust thickness of the line */
+    height: 200px; /* Adjust height of the line */
+    background-color: #f5f1f1; /* Adjust color of the line */
+}
+.box4 {
+    position: absolute; /* Position the line absolutely */
+    top: 1540px; /* Align the line to the top of the container */
+    left: 670px; /* Align the line horizontally in the middle */
+    transform: translateX(-50%); /* Center the line horizontally */
+    width: 400px; /* Adjust thickness of the line */
+    height: 200px; /* Adjust height of the line */
+    background-color: #f5f1f1; /* Adjust color of the line */
+}
+.box5 {
+    position: absolute; /* Position the line absolutely */
+    top: 1810px; /* Align the line to the top of the container */
+    left: 250px; /* Align the line horizontally in the middle */
+    transform: translateX(-50%); /* Center the line horizontally */
+    width: 400px; /* Adjust thickness of the line */
+    height: 200px; /* Adjust height of the line */
+    background-color: #f5f1f1; /* Adjust color of the line */
+}
+.project-des{
+    font-size: 18px;
+    text-align: left;
+    font-weight: normal;
+    color: #333;
+
+}
+.project{
+    font-size: 22px;
+    text-align: left;
+    color: #333;
+    
+}
+.header{
+    margin-top: -150px;
+    height: 70px;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+}
+.footer{
+    background-color: white;
+    margin-top: 1300px;
+    height: 200px;
+}
+.nav-list {
+    list-style: none;
+    padding: 10;
+    
+    display: flex;
+    margin-right: 100px;
+    
+  }
+  .nav-list-a1 {
+    text-decoration: none;
+    color: aqua;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-left: 800px;
+    text-align: right;   
+  }
+  .nav-list-a2 {
+    text-decoration: none;
+    color: aqua;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-left: 90px;
+    text-align: right;
+    
+    
+  }
+  .nav-list-a3 {
+    text-decoration: none;
+    color: aqua;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-left: 80px;
+    text-align: right;
+          }
+
+          .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-left: 8px;
+            
+           
+            text-decoration: none;
+            border: transparent;
+            
+            border-radius: 50px;
+            cursor: pointer;
+        
+            background-color: transparent;
+            color: #0a4881;
+            padding: 1px 10px;
+            border: 1px solid #cff3f1;
+           
+            transition: background-color 0.3s, color 0.3s;
+          }
+          
+          .btn:hover {
+            background-color: #b4d2f1;
+          }
+          
+
+.circle{
+    width: 10px;
+  height: 10px;
+  background-color: rgb(1, 22, 49);
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.dot-container {
+   margin-left: 1000px;
+    margin-top: 20px;
+  }
+  
+  .dot-row {
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+    height: 10px;
+    padding: 5px;
+  }
+  
+  .dot {
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  .dot-container2 {
+    margin-left: 1100px;
+     margin-top: 20px;
+   }
+   
+   .dot-row2 {
+     display: flex;
+     justify-content: space-between;
+     width: 50px;
+     height: 10px;
+     padding: 5px;
+   }
+   
+   .dot2 {
+     width: 6px;
+     height: 7px;
+     background-color: rgb(247, 246, 246);
+     border-radius: 50%;
+   }
+   
+ .myskills-txt{
+    margin-top: -200px;
+    font-size: 40px;
+ }
+ 
+ .project-container{
+    margin-top: -50px;
+ }
+
+ 
+
+ .project-text {
+  display: none;
+  position: absolute;
+ border-radius: 20px;
+  left: 0;
+  right: 0;
+  background-color: rgba(51, 51, 51, 0.9); /* Dark gray background color */
+  color: #fff; /* White text color */
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  height: 200px;
+}
+
+.project-text p {
+  margin: 0;
+  color: white;
+}
+
+.box1:hover .project-text,
+.box2:hover .project-text,
+.box3:hover .project-text,
+.box4:hover .project-text,
+.box5:hover .project-text {
+  display: block;
+  opacity: 1;
+}
+
+
+
+.project-txt1{
+  margin-left:500px ;
+  margin-top: 70px;
+  font-size: 40px;
+}
+
+
+
+.skill:hover {
+  transform: translateY(-5px); /* Move the skill 5px up on hover */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.square1{
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.square2{
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  margin-left: 280px;
+  margin-top: -150px;
+}
+.square3{
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  margin-top: -150px;
+  margin-left: 560px;
+}
+.square4{
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  margin-top: -150px;
+  margin-left: 840px;
+}
+
+.square1::before,
+.square2::before,
+.square3::before,
+.square4::before {
+  content: '';
+  position: absolute;
+  top: -10px; /* Adjust the position of the decoration */
+  left: -10px; /* Adjust the position of the decoration */
+  width: 20px; /* Width of the horizontal line */
+  height: 2px; /* Height of the horizontal line */
+  background-color: white; /* Color of the horizontal line */
+}
+
+.square1::after,
+.square2::after,
+.square3::after,
+.square4::after {
+  content: '';
+  position: absolute;
+  top: -10px; /* Adjust the position of the decoration */
+  left: -10px; /* Adjust the position of the decoration */
+  width: 2px; /* Width of the vertical line */
+  height: 20px; /* Height of the vertical line */
+  background-color: white; /* Color of the vertical line */
+}
+
+.square1 {
+  position: relative;
+}
+
+/* Adjust positions of other squares */
+.square2 {
+  margin-left: 280px;
+  margin-top: -150px;
+}
+
+.square3 {
+  margin-top: -150px;
+  margin-left: 560px;
+}
+
+.square4 {
+  margin-top: -150px;
+  margin-left: 840px;
+}
+
+.typing-text {
+  overflow: hidden; /* Hide the overflow */
+  display: inline-block; /* Display as inline block */
+  vertical-align: bottom; /* Align with the cursor */
+  white-space: nowrap; /* Prevent wrapping */
+  width: 0; /* Start with width 0 */
+  animation: typing 5s steps(40, end); /* Typing animation */
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+#cursor {
+  display: inline-block;
+  vertical-align: bottom;
+  animation: blink 1.1s infinite; /* Blinking animation */
+}
+
+@keyframes blink {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.photo{
+  margin-top: -310px;
+  margin-left: 900px;
+}
+.text2{
+  font-size: 60px;
+  text-align: left;
+  margin-left: -2px;
+ color: #fdf8f8;
+  font-weight: bold;
+  
+  
+}
+.icon-container1{
+  width: 2px;
+  height: 1px;
+  margin-top: 60px;
+  margin-left: 5px;
+  
+}
+.icon-container2{
+  width: 1px;
+  height: 1px;
+  margin-top: -2px;
+  margin-left: 80px;
+  
+}
+
+
+/* Home.css */
+
+
+
+.box:hover1 {
+  box-shadow: inset 10px 10px 20px #b8bec9, inset -10px -10px 20px #ffffff;
+  transition: transform 0.01s ease;
+}
+
+
+.box:hover2 {
+  box-shadow: inset 10px 10px 20px #b8bec9, inset -10px -10px 20px #ffffff;
+}
+
+
+
+/* Home.css */
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(135deg, rgba(37, 37, 37, 0.9), rgba(1, 23, 27, 0.9));
+  overflow: hidden;
+} 
+
+.content {
+  position: relative;
+  z-index: 1; /* Keep it above the background */
+}
+
+.background::before {
+  content: '';
+  position: absolute;
+  top: -200px; /* Adjust based on the desired position */
+  left: -200px; /* Adjust based on the desired position */
+  width: calc(100% + 400px); /* Adjust based on the desired width */
+  height: calc(100% + 400px); /* Adjust based on the desired height */
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent 70%);
+  transform: rotate(45deg);
+}
+
+
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box1,
+.box2 {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  transition: transform 0.01s ease;
+}
+
+.box1.hovered,
+.box2.hovered {
+  transform: scale(1.1) ;
+  /* Add other transformations as needed */
+}
+
+
+
+.project-box {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-out;
+  transform: translateX(-100%); /* Initial position off-screen to the left */
+}
+
+.project-box.is-visible {
+  opacity: 1;
+  transform: translateX(0); /* Move to original position */
+}
+
+
+
+.box1 {
+  /* Your existing styles */
+  /* Add the following styles to apply the tilt effect */
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.box1:hover {
+  transform: rotateY(-5deg) rotateX(-5deg) rotateZ(-5deg);; /* Adjust the tilt angle as needed */
+}
+.box2 {
+  /* Your existing styles */
+  /* Add the following styles to apply the tilt effect */
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.box2:hover {
+  transform: rotateY(5deg) rotateX(5deg) rotateZ(5deg);; /* Adjust the tilt angle as needed */
+}
+.box2 {
+  /* Your existing styles */
+  /* Add the following styles to apply the tilt effect */
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.box3:hover {
+  transform: rotateY(-5deg) rotateX(-5deg) rotateZ(-5deg);; /* Adjust the tilt angle as needed */
+}
+
+.box3 {
+  /* Your existing styles */
+  /* Add the following styles to apply the tilt effect */
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.box3:hover {
+  transform: rotateY(-5deg) rotateX(-5deg) rotateZ(-5deg);; /* Adjust the tilt angle as needed */
+}
+
+.box4 {
+  /* Your existing styles */
+  /* Add the following styles to apply the tilt effect */
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.box4:hover {
+  transform: rotateY(5deg) rotateX(5deg) rotateZ(5deg);; /* Adjust the tilt angle as needed */
+}
+
+.box5 {
+  /* Your existing styles */
+  /* Add the following styles to apply the tilt effect */
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.box5:hover {
+  transform: rotateY(-5deg) rotateX(-5deg) rotateZ(-5deg);; /* Adjust the tilt angle as needed */
+}

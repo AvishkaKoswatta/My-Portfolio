@@ -1,0 +1,92 @@
+/* styles.css */
+.progress {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+}
+
+.progress:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 14px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress > .progress-left {
+    transform: rotate(0deg);
+}
+
+.progress > .progress-left .progress-bar {
+    border-radius: 50px 0 0 50px;
+}
+
+.progress > .progress-right {
+    transform: rotate(0deg);
+}
+
+.progress > .progress-right .progress-bar {
+    border-radius: 0 50px 50px 0;
+}
+
+.progress .progress-bar {
+    width: 50%;
+    height: 100%;
+    background: none;
+    border-width: 14px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+    color: #fff;
+}
+
+.progress.blue {
+    background-color: #3b5998;
+}
+
+.progress.blue .progress-bar {
+    left: 100%;
+    border-color: #3b5998;
+    text-align: right;
+}
+
+.progress.blue .progress-left .progress-bar {
+    left: -100%;
+    border-color: #3b5998;
+    text-align: left;
+}
+
+.progress.yellow {
+    background-color: #fdba04;
+}
+
+.progress.yellow .progress-bar {
+    left: 0;
+    border-color: #fdba04;
+    text-align: left;
+}
+
+.progress.yellow .progress-right .progress-bar {
+    left: 100%;
+    border-color: #fdba04;
+    text-align: right;
+}
+
+.progress-value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 100px;
+    font-size: 24px;
+    font-family: Arial;
+    text-align: center;
+}

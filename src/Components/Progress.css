@@ -1,0 +1,14 @@
+.label{
+    margin-left: 10px;
+    font-weight: normal;
+}
+.skill-set:hover {
+    transform: translateY(-5px); /* Move the skill set 5px up on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+  .java{
+    transform: translateY(-5px); /* Move the skill set 5px up on hover */
+    transition: transform 0.3s ease;
+ 
+  margin-left: -10px;
+  }
