@@ -1,0 +1,63 @@
+.about-me-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .profile-picture{
+    height: 520px;
+    width: 500px;
+    background-color: white;
+    margin-left: -530px;
+    border-radius: 10px;
+    margin-top: -45px;
+  }
+  .profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 100px;
+  }
+  
+  
+  .about{
+    height: 250px;
+    width: 500px;
+    background-color: white;
+    margin-left: 500px;
+    margin-top: -510px;
+    border-radius: 10px;
+  }
+  .about-contact{
+    height: 250px;
+    width: 500px;
+    background-color: white;
+    margin-left: 500px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  .about-text1{
+    margin-top: 50px;
+    text-align: center;
+  }
+  .about-text2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .social-icons1{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem auto 2rem;
+    
+  }

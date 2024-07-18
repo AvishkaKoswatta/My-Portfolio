@@ -18,7 +18,12 @@ const Project1 = () => {
            </div>
            <div className='techno'>#MERN #Flutter</div>
            <div className='photos'>
-           <img src="/images/Galle.jpg" alt="Article 1 Image" class='n-1' />
+            
+           <img src="/images/1.png" alt="Article 1 Image" class='p1'  />
+           <br/>
+           <p> </p>
+           <img src="/images/2.png" alt="Article 1 Image" class='p2' />
+          
            </div>
         </div>
     );

@@ -25,9 +25,9 @@ body {
     
 }
 .skills{
-    font-size: 25px;
+    font-size: 20px;
     padding: 10px 20px;
-    margin-left: -400px;
+    margin-left: -500px;
 }
 
 .java{
@@ -67,7 +67,7 @@ body {
     transform: translateX(-50%); /* Center the line horizontally */
     width: 400px; /* Adjust thickness of the line */
     height: 200px; /* Adjust height of the line */
-    background-color: #053541; /* Adjust color of the line */
+    background-color: red; /* 053541 */
 }
 
 .box2 {
@@ -123,13 +123,13 @@ body {
 .header{
     margin-top: -150px;
     height: 70px;
-    background-color: white;
+    background-color: #333;
     position: fixed;
     z-index: 1;
 }
 .footer{
     background-color: white;
-    margin-top: 1300px;
+    margin-top: auto;
     height: 200px;
 }
 .nav-list {
@@ -142,7 +142,7 @@ body {
   }
   .nav-list-a1 {
     text-decoration: none;
-    color: aqua;
+    color: rgb(201, 119, 201);
     font-weight: bold;
     margin-top: 25px;
     margin-left: 800px;
@@ -150,7 +150,7 @@ body {
   }
   .nav-list-a2 {
     text-decoration: none;
-    color: aqua;
+    color: rgb(201, 119, 201);
     font-weight: bold;
     margin-top: 25px;
     margin-left: 90px;
@@ -180,15 +180,15 @@ body {
             cursor: pointer;
         
             background-color: transparent;
-            color: #0a4881;
+            color: rgb(201, 119, 201);
             padding: 1px 10px;
-            border: 1px solid #cff3f1;
+            /* border: 1px solid #cff3f1; */
            
             transition: background-color 0.3s, color 0.3s;
           }
           
           .btn:hover {
-            background-color: #b4d2f1;
+            background-color: #858586;
           }
           
 
@@ -240,7 +240,7 @@ body {
    }
    
  .myskills-txt{
-    margin-top: -200px;
+    margin-top: -100px;
     font-size: 40px;
  }
  
@@ -282,8 +282,10 @@ body {
 
 .project-txt1{
   margin-left:500px ;
-  margin-top: 70px;
+  margin-top: 30px;
   font-size: 40px;
+  color: black;
+  
 }
 
 
@@ -402,7 +404,7 @@ body {
   font-size: 60px;
   text-align: left;
   margin-left: -2px;
- color: #fdf8f8;
+ color: black;
   font-weight: bold;
   
   
@@ -451,7 +453,8 @@ body {
   left: 0;
   width: 100%;
   height: 600px;
-  background: linear-gradient(135deg, rgba(37, 37, 37, 0.9), rgba(1, 23, 27, 0.9));
+  background: linear-gradient(135deg, white, rgba(79, 4, 109, 0.842)); 
+  /* rgba(37, 37, 37, 0.9), rgba(1, 23, 27, 0.9) */
   overflow: hidden;
 } 
 
@@ -484,6 +487,7 @@ body {
   height: 200px;
   margin: 10px;
   transition: transform 0.01s ease;
+  
 }
 
 .box1.hovered,
@@ -512,10 +516,16 @@ body {
   /* Add the following styles to apply the tilt effect */
   transform-style: preserve-3d;
   transition: transform 0.5s ease;
+  
 }
 
 .box1:hover {
   transform: rotateY(-5deg) rotateX(-5deg) rotateZ(-5deg);; /* Adjust the tilt angle as needed */
+}
+.outer-container {
+  padding: 10px; /* Adjust the value as needed */
+  background-color: white;
+  margin-left: -45px;
 }
 .box2 {
   /* Your existing styles */
@@ -569,4 +579,53 @@ body {
 
 .box5:hover {
   transform: rotateY(-5deg) rotateX(-5deg) rotateZ(-5deg);; /* Adjust the tilt angle as needed */
+}
+
+
+/* Home.css */
+
+/* Add neumorphic effect for NumorprismCard */
+.numorprism-card {
+  background: linear-gradient(145deg, #f3f4f6, #e2e4e7);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #bebebe, -5px -5px 5px #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  text-align: center;
+}
+.second-skills{
+  margin-left: -790px;
+  margin-top: -100px;
+}
+.second-img{
+  margin-left: 700px;
+  margin-top: -5px;
+  height: 10px;
+  width: 10px;
+}
+.outer-container{
+  margin-top: 80px;
+}
+.third{
+  margin-top: -90px;
+}
+.project-square{
+  height: 580px;
+  width: 1245px;
+  background-color: white;
+  margin-top: -200px;
+  margin-left: -48px;
+  background: linear-gradient(250deg, white, rgba(230, 216, 236, 0.842)); 
+}
+.project-img{
+  position: absolute; /* Use absolute positioning to control placement */
+  margin-top: 200px; 
+  left: 30%;
+  transform: translateX(-50%);
 }

@@ -1,13 +1,19 @@
+// Home.js
 import React, { useEffect, useState, useRef } from 'react';
 import './Home.css';
-import Progress from './Progress'; 
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import NumorprismCard from './NumorprismCard'; 
+import Button from './Button';
+import DownloadButton from './DownloadButton';
+import './DownloadButton.css';
+import Projects from './Projects';
+import './Projects.css';
 
 const Home = () => {
     const [typedText, setTypedText] = useState('');
-    const textToType = "An Undergraduate & A Developer";
+    const textToType = "An Undergraduate";
 
     const observer = useRef(null);
 
@@ -35,9 +41,6 @@ const Home = () => {
     
         return () => observer.current.disconnect();
     }, []);
-    
-    
-    
     
     useEffect(() => {
         let currentIndex = 0;
@@ -70,23 +73,27 @@ const Home = () => {
                                 <Link className="btn" to="/about">About</Link>
                             </div>
                             <div className="nav-list-a3">
-                                <Link className="btn" to="/contact">Contact</Link>
+                                <Link className="btn" to="/contactform">Contact</Link>
                             </div>
                         </div>
                     </nav>
                 </header>
 
                 <div className="text1">
+                <div className='second-img'>
+                        <img src="/images/woman.png" alt="Search" style={{height:'180px'}} /> 
+                        </div>
                     <p className='text2'>
                         Hi..! 
                         <br/>
-                        I am <span style={{ color: 'rgba(13, 192, 224, 0.959)', fontSize:'60px', fontWeight: 'bold' }}>Avishka</span>,
+                        I am <span style={{ color: '#756AB6 ', fontSize:'60px', fontWeight: 'bold' }}>Avishka</span>,
                         <br />
                         <span>{typedText}</span>
                         <span id="cursor">|</span>
                     </p>
-                   
-                    <div className='iconbuttons'>
+                    
+                    <DownloadButton />
+                    {/* <div className='iconbuttons'>
                         <a href="https://www.linkedin.com/in/avishkakoswaththa/" target="_blank" rel="noopener noreferrer">
                             <div className="icon-container1">
                                 <FontAwesomeIcon icon={faLinkedin} color="black" size="xs" />
@@ -97,7 +104,7 @@ const Home = () => {
                                 <FontAwesomeIcon icon={faGithub} color="black"  size="xs"/>
                             </div>
                         </a>
-                    </div>
+                    </div> */}
                     <div className='circles'>
                         <div className="dot-container">
                             {/* Top row of dots */}
@@ -140,39 +147,41 @@ const Home = () => {
                         <div className='square'></div>
                        <div className='myskills-txt'>My skills</div> 
                         <br/>
-                        <div className='skills'>
-                            <div className='square1' style={{ backgroundImage: 'url(/images/java.gif)', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
-                            <div className='square2' style={{ backgroundImage: 'url(/images/react.gif)', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
-                            <div className='square3' style={{ backgroundImage: 'url(/images/flutter.gif)', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
-                            <div className='square4' style={{ backgroundImage: 'url(/images/feather.gif)', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
-                            <Progress  />
+                        
+                        <div className='second-skills'>
+                       
+                        <NumorprismCard type="submit" ></NumorprismCard>
+                        <div className='second-img'>
+                        {/* <img src="/images/me1.png" alt="Search" style={{height:'180px'}} /> */}
+                        </div>
                         </div>
                     </div>
                     <br/>
-                    <div className='third'>
-                       <div className='project-txt1'>Projects</div> 
+                    {/* <div className='third'>
+                       <div className='project-txt1' >Projects</div> 
                        <div className='project-container'>
                         <div className='line'></div>
+                      
                         <Link to="/project1">
-                        <div className='box1 project-box' style={{ backgroundImage: 'url(/images/fort.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', height: '200px', width: '400px'}}>
+                       
+                        <div className='box1 project-box' style={{ backgroundImage: 'url(/images/project1.png)', backgroundSize: 'cover', backgroundPosition: 'center', height: '200px', width: '400px',margin:'10px'}}>
                         
                         <div className="project-text">
                             <p className="project">DownSouth Tourists Medical Help project</p>
-                            <p className="project-des">This is an ongoing group project that provides medical center and tourist destination information around DownSouth to the tourists.
-                                <br/>Technologies: MERN, Flutter
-                            </p>
+                            
+                        </div>
+                        </div>
+                       
+                        </Link>
+                        <Link to="/project2">
+                        <div className='box2 project-box' style={{ backgroundImage: 'url(/images/project2.png)', backgroundSize: 'cover', backgroundPosition: 'center', height: '200px', width: '400px' }}>
+                        <div className="project-text">
+                            <p className="project">Real Estate website</p>
+                           
                         </div>
                         </div>
                         </Link>
-                        <div className='box2 project-box' style={{ backgroundImage: 'url(/images/land.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', height: '200px', width: '400px' }}>
-                        <div className="project-text">
-                            <p className="project">Real Estate website</p>
-                            <p className="project-des">An individual web application project that aims to develop basic CRUD operations in the land selling and buying system.
-                                <br/>Technologies: Java, React, MySQL (Spring Boot)
-                            </p>
-                        </div>
-                        </div>
-                        <div className='box3 project-box' style={{ backgroundImage: 'url(/images/house.webp)', backgroundSize: 'cover', backgroundPosition: 'center', height: '200px', width: '400px' }}>
+                        <div className='box3 project-box' style={{ backgroundImage: 'url(/images/p3.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', height: '200px', width: '400px' }}>
                             
                         <div className="project-text">
                             <p className="project">Real Estate Exploration App</p>
@@ -181,25 +190,44 @@ const Home = () => {
                             </p>
                         </div>
                         </div>
-                        <div className='box4 project-box'  style={{ backgroundImage: 'url(/images/srs.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', height: '200px', width: '400px' }}>
+                        <Link to="/project4"> 
+                        <div className='box4 project-box'  style={{ backgroundImage: 'url(/images/project4.png)', backgroundSize: 'cover', backgroundPosition: 'center', height: '200px', width: '400px' }}>
                         <div className="project-text">
-                            <p className="project">Student registration system</p>
-                            <p className="project-des">An individual project that aims to develop a basic student registration system as a GUI application.
-                                <br/>Technologies: WPF for GUI (MVVM), SQLite
-                            </p>
+                            <p className="project">Home Service Finder Website</p>
+                            
                         </div>
                         </div>
-                        <div className='box5 project-box' style={{ backgroundImage: 'url(/images/mental.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center', height: '200px', width: '400px' }}>
+                        </Link>
+                        <Link to="/project5">
+                        <div className='box5 project-box' style={{ backgroundImage: 'url(/images/project5.png)', backgroundSize: 'cover', backgroundPosition: 'center', height: '200px', width: '400px' }}>
                             
                         <div className="project-text">
-                            <p className="project">Mental Health Prediction project</p>
-                            <p className="project-des">A machine learning group project that predicts mental health in the IT sector.
-                                <br/>Technologies: Python (ML)
-                            </p>
+                            <p className="project">Mental Health Website project</p>
+                            
                         </div>
                         </div>
+                        </Link>
+
+                        
+                            
+                        </div>
+                    </div> */}
+                    <div className='project-square' >
+                    <div className='project-txt1' style={{ marginTop:'80px'}} >Projects</div>
+                    <div className='project-img'>
+                    
+                        {/* <img src="/images/files.png" alt="Search" style={{height:'180px'}} />  */}
+                        <Projects/>
+                        </div>
+                        <div>
+                            <p></p>
                         </div>
                     </div>
+                    <div className='four'>
+                        <div className='project-txt1' style={{ marginTop:'50px',color:'white'}}>Find Me</div>
+                        <Button type="submit" className="btn6 btn-primary">Send</Button>
+                        
+                        </div>
                 </div>
             </div>
 
