@@ -10,6 +10,7 @@ import DownloadButton from './DownloadButton';
 import './DownloadButton.css';
 import Projects from './Projects';
 import './Projects.css';
+import Header from './Header';
 
 const Home = () => {
     const [typedText, setTypedText] = useState('');
@@ -55,15 +56,37 @@ const Home = () => {
         return () => clearInterval(typingInterval);
     }, []);
 
-    return (
-        <div className="container">
-            {/* Irregular shape background */}
-            <div className="background"></div>
 
-            {/* Main content */}
-            <div className="content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    return (
+        
+        <div className="container">
+            
+            
+            
+            <Header></Header>
                 {/* Header */}
-                <header className="header">
+                {/* <header className="header">
+                    
                     <nav>
                         <div className="nav-list">
                             <div className="nav-list-a1">
@@ -77,7 +100,7 @@ const Home = () => {
                             </div>
                         </div>
                     </nav>
-                </header>
+                </header> */}
 
                 <div className="text1">
                 <div className='second-img'>
@@ -228,7 +251,7 @@ const Home = () => {
                         <Button type="submit" className="btn6 btn-primary">Send</Button>
                         
                         </div>
-                </div>
+                
             </div>
 
             {/* Footer */}
