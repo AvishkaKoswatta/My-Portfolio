@@ -14,7 +14,7 @@ const DownloadButton = () => {
       backgroundColor:'#638c80',
     }}
   >
-    Download CV
+    Resume
   </a>
 </div>
 
