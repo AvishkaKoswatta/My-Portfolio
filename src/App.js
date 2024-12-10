@@ -12,6 +12,7 @@ import Project5 from './Components/Project5';
 import Project4 from './Components/Project4';
 import ContactForm from './Components/ContactForm';
 import Header from './Components/Header';
+import Projects from './Components/Projects';
 // import Projects from './Components/Projects';
 //import Template from './Components/Template';
 
@@ -23,7 +24,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/progress" element={<Progress />} />
           <Route path="/about" element={<About />} />
-          
+          <Route path="/projects" element={<Projects />} />
           <Route path="/project1" element={<Project1 />} />
           <Route path="/project2" element={<Project2 />} />
           <Route path="/project5" element={<Project5 />} />

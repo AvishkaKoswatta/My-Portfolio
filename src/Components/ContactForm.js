@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
 import './ContactForm.css'; 
-
+import Header from './Header';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -38,8 +38,11 @@ const ContactForm = () => {
   };
 
   return (
+    <div>
+       <Header></Header>
+   
     <div className="container mt-56">
-      <h1>Contact Me</h1>
+      
       <form onSubmit={handleSubmit}>
         <div className="form-group6">
           
@@ -79,8 +82,11 @@ const ContactForm = () => {
             required
           />
         </div>
-        <button type="submit" className="btn6 btn-primary">Send</button>
+        <div className='btn-submit'>
+        <button type="submit" className="btn6">Send</button>
+        </div>
       </form>
+    </div>
     </div>
   );
 };

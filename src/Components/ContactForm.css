@@ -1,11 +1,13 @@
 /* src/styles/bootstrap-like.css */
 
 .container6 {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+  display: flex; /* Use flexbox for flexible layout */
+  flex-direction: column; /* Stack child elements vertically */
+  align-items: flex-start; /* Align content to the start (left-aligned) */
+  justify-content: flex-start; /* Optional: Align content to the top */
+  padding: 20px; /* Add some spacing */
+  margin: 0; /* Reset margins */
+  width: 100%; 
     
   }
   
@@ -15,13 +17,13 @@
   
   .form-group6 {
     margin-bottom: 1rem;
-    
+     
   }
   
   .form-control6 {
-    margin-left: 410px;
+     
     display: block;
-    width: 400px;
+    width: 500px;
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
     line-height: 1.5;
@@ -31,6 +33,7 @@
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    
   }
   
   .form-control6:focus {
@@ -42,32 +45,34 @@
   }
   
   .btn6 {
-    display: inline-block;
-    font-weight: 400;
-    color: #212529;
-    text-align: center;
-     
-    vertical-align: middle;
-    cursor: pointer;
-    background-color: white;
-    border: 1px solid transparent;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 0.25rem;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    
+    padding: 10px 20px; /* Adjust button padding */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Make text bold */
+    border-radius: 8px; /* Add rounded corners */
+    border: none; /* Remove default border */
+    background-color: #638c80; /* Primary color */
+    color: white; /* Text color */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth hover effects */
 }
-  
-  .btn6-primary {
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
-  }
-  
-  .btn6-primary:hover {
-    color: #fff;
-    background-color: #0056b3;
-    border-color: #004085;
-  }
+
+.btn6:hover {
+    background-color: #748681; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.btn6:active {
+    background-color: #638c80; /* Even darker blue on click */
+    transform: scale(0.98); /* Slight shrink effect on click */
+}
+
+.btn6:focus {
+    outline: none; /* Remove focus outline */
+    box-shadow: 0 0 4px #638c80; /* Add focus shadow */
+}
+.btn-submit {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: start; /* Center the button horizontally */
+  align-items: center; /* Center the button vertically (if needed) */
+  margin-top: 20px; /* Add spacing above the button */
+}
   
