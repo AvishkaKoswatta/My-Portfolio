@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './Projects.css'; 
 import { Link } from 'react-router-dom';
+import Header from './Header';
 
 const Projects = () => {
   useEffect(() => {
@@ -28,6 +29,7 @@ const Projects = () => {
 
   return (
     <div className="App1">
+ <Header></Header>
       <div className="projects-container">
         <Link to="/project1" className="project-card">
           <img src="/images/project1.png" alt="Project 1" />

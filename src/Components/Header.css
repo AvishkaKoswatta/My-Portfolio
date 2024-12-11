@@ -1,0 +1,42 @@
+.Header {
+    background-color: white;
+     
+    width: 100%;
+    margin: 0;   /* Removes default margin */
+    padding: 20px 0;
+  }
+
+  
+  .nav-link {
+    color: #333 !important;
+    margin-right: 15px;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    color: #758aa0 !important;
+    text-decoration: underline;
+  }
+  
+  .nav-link.active {
+    text-decoration: underline;
+    color: #758aa0 !important;
+    font-family: "Roboto", Arial, sans-serif;
+
+  }
+  
+  @media (max-width: 768px) {
+    .Header-search {
+      display: none;
+    }
+  
+    .nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-link {
+      margin-bottom: 10px;
+    }
+  }
+  

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Button from '@mui/material/Button'; // Import MUI Button
 import './About.css';
+import Header from './Header';
 
 const About = () => {
 
@@ -29,6 +30,8 @@ const About = () => {
 
 
   return (
+    <div>
+       <Header></Header>
     <div className="about-me-container">
       <div className="profile-picture">
         <img src="/images/photo1.jpg" alt="Profile" />
@@ -87,6 +90,7 @@ const About = () => {
         </ul>
         </div>
       </div>
+    </div>
     </div>
   );
 };

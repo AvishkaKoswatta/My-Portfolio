@@ -3,17 +3,18 @@ import React, { useEffect, useState, useRef } from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub, faYoutube, faMedium,   } from '@fortawesome/free-brands-svg-icons';
 import NumorprismCard from './NumorprismCard'; 
 import Button from './Button';
 import DownloadButton from './DownloadButton';
 import './DownloadButton.css';
 import Projects from './Projects';
 import './Projects.css';
+import Header from './Header';
 
 const Home = () => {
     const [typedText, setTypedText] = useState('');
-    const textToType = "An Undergraduate";
+    const textToType = "I am an Undergraduate";
 
     const observer = useRef(null);
 
@@ -55,15 +56,19 @@ const Home = () => {
         return () => clearInterval(typingInterval);
     }, []);
 
-    return (
-        <div className="container">
-            {/* Irregular shape background */}
-            <div className="background"></div>
 
-            {/* Main content */}
-            <div className="content">
+
+    
+    return (
+        
+        <div className="container">
+            
+            
+            
+            <Header></Header>
                 {/* Header */}
-                <header className="header">
+                {/* <header className="header">
+                    
                     <nav>
                         <div className="nav-list">
                             <div className="nav-list-a1">
@@ -77,37 +82,69 @@ const Home = () => {
                             </div>
                         </div>
                     </nav>
-                </header>
+                </header> */}
 
                 <div className="text1">
                 <div className='second-img'>
-                        {/* <img src="/images/woman.png" alt="Search" style={{height:'180px'}} />  */}
+                        <img src="/images/me-cartoon-3d.png" alt="Search" style={{height:'280px'}} /> 
                         </div>
                     <p className='text2'>
-                        Hi..! 
-                        <br/>
-                        I am <span style={{ color: '#756AB6 ', fontSize:'60px', fontWeight: 'bold' }}>Avishka</span>,
-                        <br />
-                        <span>{typedText}</span>
+                        <p className='text-hello'>HELLO! </p> 
+                       
+                        
+                         
+                        <span className='typed-text'> {typedText}</span>
                         <span id="cursor">|</span>
+                        <p className='text-description'>Let Me Help You to Build Your Dream Website. </p>
                     </p>
                     
-                    <DownloadButton />
-                    {/* <div className='iconbuttons'>
-                        <a href="https://www.linkedin.com/in/avishkakoswaththa/" target="_blank" rel="noopener noreferrer">
-                            <div className="icon-container1">
-                                <FontAwesomeIcon icon={faLinkedin} color="black" size="xs" />
-                            </div>
-                        </a>
-                        <a href="https://github.com/AvishkaKoswatta" target="_blank" rel="noopener noreferrer">
-                            <div className="icon-container2">
-                                <FontAwesomeIcon icon={faGithub} color="black"  size="xs"/>
-                            </div>
-                        </a>
-                    </div> */}
-                    <div className='circles'>
+                   
+                    <div className="iconbuttons">
+    <a
+      href="https://www.linkedin.com/in/avishkakoswaththa/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="icon-link"
+    >
+      <div className="icon-container1">
+        <FontAwesomeIcon icon={faLinkedin} color="black" style={{ fontSize: '20px' }} />
+      </div>
+    </a>
+    <a
+      href="https://github.com/AvishkaKoswatta"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="icon-link"
+    >
+      <div className="icon-container2">
+        <FontAwesomeIcon icon={faGithub} color="black" style={{ fontSize: '20px' }} />
+      </div>
+    </a>
+    <a
+      href="https://www.youtube.com/@AvishkaKoswaththa"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="icon-link"
+    >
+      <div className="icon-container3">
+        <FontAwesomeIcon icon={faYoutube} color="black" style={{ fontSize: '20px' }} />
+      </div>
+    </a>
+   
+    <a
+      href="https://medium.com/@avishkakkoswaththa"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="icon-link"
+    >
+      <div className="icon-container5">
+        <FontAwesomeIcon icon={faMedium} color="black" style={{ fontSize: '20px' }} />
+      </div>
+    </a>
+  </div>
+                    {/* <div className='circles'>
                         <div className="dot-container">
-                            {/* Top row of dots */}
+                          
                             <div className="dot-row">
                                 <div className="dot"></div>
                                 <div className="dot"></div>
@@ -125,7 +162,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="dot-container2">
-                            {/* Top row of dots */}
+                             
                             <div className="dot-row2">
                                 <div className="dot2"></div>
                                 <div className="dot2"></div>
@@ -142,8 +179,8 @@ const Home = () => {
                                 <div className="dot2"></div>
                             </div>
                         </div>
-                    </div>
-                    <div className='second'>
+                    </div> */}
+                    {/* <div className='second'>
                         <div className='square'></div>
                        <div className='myskills-txt'>My skills</div> 
                         <br/>
@@ -152,10 +189,10 @@ const Home = () => {
                        
                         <NumorprismCard type="submit" ></NumorprismCard>
                         <div className='second-img'>
-                        {/* <img src="/images/me1.png" alt="Search" style={{height:'180px'}} /> */}
+                       
                         </div>
                         </div>
-                    </div>
+                    </div> */}
                     <br/>
                     {/* <div className='third'>
                        <div className='project-txt1' >Projects</div> 
@@ -212,30 +249,30 @@ const Home = () => {
                             
                         </div>
                     </div> */}
-                    <div className='project-square' >
-                    <div className='project-txt1' style={{ marginTop:'80px'}} >Projects</div>
+                    {/* <div className='project-square' >
+                    <div className='project-txt1'  >Projects</div>
                     <div className='project-img'>
                     
-                        {/* <img src="/images/files.png" alt="Search" style={{height:'180px'}} />  */}
+                      
                         <Projects/>
                         </div>
                         <div>
                             <p></p>
                         </div>
-                    </div>
-                    <div className='four'>
+                    </div> */}
+                    {/* <div className='four'>
                         <div className='project-txt1' style={{ marginTop:'50px',color:'white'}}>Find Me</div>
                         <Button type="submit" className="btn6 btn-primary">Send</Button>
                         
-                        </div>
-                </div>
+                        </div> */}
+                
             </div>
 
             {/* Footer */}
-            <footer className="footer">
+            {/* <footer className="footer">
                 
                 <p>&copy; 2024 My Portfolio</p>
-            </footer>
+            </footer> */}
         </div>
     );
 };
