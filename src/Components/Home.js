@@ -86,7 +86,7 @@ const Home = () => {
 
                 <div className="text1">
                 <div className='second-img'>
-                        {/* <img src="/images/computer.png" alt="Search" style={{height:'280px'}} />  */}
+                        <img src="/images/me-cartoon-3d.png" alt="Search" style={{height:'280px'}} /> 
                         </div>
                     <p className='text2'>
                         <p className='text-hello'>HELLO! </p> 
